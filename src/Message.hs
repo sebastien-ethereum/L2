@@ -20,7 +20,7 @@ import GHC.TypeLits
 type Lit = Nat
 
 
-type Key = String
+type Key = Nat
 
 
 data Message :: * where
