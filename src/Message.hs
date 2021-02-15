@@ -95,7 +95,7 @@ type Algebra f a = f a -> a
 data Fixpoint f = In {out :: f (Fixpoint f)}
 
 
-trivial :: Algebra Signature (Fixpoint Signature)
+trivial :: Algebra f (Fixpoint f)
 trivial = In
 
 
