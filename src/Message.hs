@@ -52,7 +52,7 @@ data (⊩) :: Context -> Message -> * where
             -----------
          -> g ⊩ n
 
-  LitI   :: KnownNat x    -- example: `LitI (Proxy 42)`
+  LitI   :: KnownNat x    -- example: `LitI (Proxy :: Proxy 42)`
          => proxy x
             ----------
          -> g ⊩ 'Lit x
